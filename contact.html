@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hello World</title>
+    <title>Yume</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -42,10 +42,8 @@
                         </div><!-- .hamburger-menu -->
 
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">Events</a></li>
-                            <li><a href="#">News</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav><!-- .site-navigation -->
@@ -53,7 +51,7 @@
 
                 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
                     <div class="buy-tickets">
-                        <a class="btn gradient-bg" href="#">Buy Tickets</a>
+                        <a class="btn gradient-bg" href="#">Comprar entradas</a>
                     </div><!-- .buy-tickets -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -65,7 +63,7 @@
             <div class="row">
                 <div class="col-12">
                     <header class="entry-header">
-                        <h1 class="entry-title">Contact.</h1>
+                        <h1 class="entry-title">Contacto</h1>
                     </header>
                 </div>
             </div>
@@ -76,63 +74,26 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4"style="text-align: center;">
             <div class="contact-location-details">
-                <h2 class="entry-title">New York</h2>
+                <h2 class="entry-title">Santiago</h2>
 
                 <div class="entry-content">
-                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et.</p>
+                    <p>Nuestras oficinas centrales se encuentran en la comuna de Santiago</p>
                 </div>
 
                 <footer class="entry-footer">
                     <ul>
-                        <li class="contact-address">667889 Madison Avenue, no24-56</li>
-                        <li class="contact-number">665 5667 8899 661</li>
-                        <li class="contact-email"><a href="#">office@yourbusiness.com</a></li>
+                        <li class="contact-number" style="padding-left: 0px">+56993932521</li>
+                        <li class="contact-email" style="padding-left: 0px"><a href="#">contacto@yume.cl</a></li>
                     </ul>
                 </footer>
             </div>
         </div>
-
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="contact-location-details">
-                <h2 class="entry-title">Miami</h2>
-
-                <div class="entry-content">
-                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et.</p>
-                </div>
-
-                <footer class="entry-footer">
-                    <ul>
-                        <li class="contact-address">122344 Island Str, no23</li>
-                        <li class="contact-number">665 5667 8899 661</li>
-                        <li class="contact-email"><a href="#">office@yourbusiness.com</a></li>
-                    </ul>
-                </footer>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="contact-location-details">
-                <h2 class="entry-title">Los Angeles</h2>
-
-                <div class="entry-content">
-                    <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et.</p>
-                </div>
-
-                <footer class="entry-footer">
-                    <ul>
-                        <li class="contact-address">667889 Long Avenue, no24-56</li>
-                        <li class="contact-number">665 5667 8899 661</li>
-                        <li class="contact-email"><a href="#">office@yourbusiness.com</a></li>
-                    </ul>
-                </footer>
-            </div>
         </div>
     </div>
-</div>
-
-<div class="contact-page-map">
-    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </div>
 
 <div class="container">
@@ -140,11 +101,11 @@
         <div class="col-12">
             <div class="contact-form">
                 <form class="row">
-                    <div class="col-12 col-md-4"><input type="text" placeholder="Name"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="E-mail"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="Subject"></div>
-                    <div class="col-12"><textarea placeholder="Message" rows="8"></textarea></div>
-                    <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="submit" value="Send Message"></div>
+                    <div class="col-12 col-md-4"><input id="name" type="text" placeholder="Nombre" name="name"></div>
+                    <div class="col-12 col-md-4"><input id="email" type="email" placeholder="E-mail" name="email"></div>
+                    <div class="col-12 col-md-4"><input id="subjet" type="text" placeholder="Asunto" name="subjet"></div>
+                    <div class="col-12"><textarea id="content" placeholder="Mensaje" rows="8"></textarea></div>
+                    <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="submit" value="Enviar Mensaje"></div>
                 </form>
             </div>
         </div>
@@ -156,22 +117,21 @@
         <div class="row">
             <div class="col-12">
                 <header class="entry-header">
-                    <h2 class="entry-title">Subscribe to our newsletter to get the latest trends & news</h2>
-                    <p>Join our database NOW!</p>
+                    <h2 class="entry-title">Suscibete a nuestro newsletter para recibir todas las noticias sobre nuestros eventos y novedades</h2>
                 </header>
 
                 <div class="newsletter-form">
                     <form class="flex flex-wrap justify-content-center align-items-center">
                         <div class="col-md-12 col-lg-3">
-                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Nombre">
                         </div>
 
                         <div class="col-md-12 col-lg-6">
-                            <input type="email" placeholder="Your e-mail">
+                            <input type="email" placeholder="e-mail">
                         </div>
 
                         <div class="col-md-12 col-lg-3">
-                            <input class="btn gradient-bg" type="submit" value="Subscribe">
+                            <input class="btn gradient-bg" type="submit" value="Subscribir">
                         </div>
                     </form>
                 </div>
@@ -191,10 +151,8 @@
                 <nav class="footer-navigation">
                     <ul class="flex flex-wrap justify-content-center align-items-center">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
 
@@ -204,7 +162,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
                 <div class="footer-social">
                     <ul class="flex flex-wrap justify-content-center align-items-center">
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
