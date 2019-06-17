@@ -43,7 +43,7 @@
 
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Events</a></li>
+                            <li><a href="events.html">Events</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav><!-- .site-navigation -->
@@ -100,12 +100,12 @@
     <div class="row">
         <div class="col-12">
             <div class="contact-form">
-                <form class="row">
+                <form class="row" role="form" action="mail.php" method="post">
                     <div class="col-12 col-md-4"><input id="name" type="text" placeholder="Nombre" name="name"></div>
                     <div class="col-12 col-md-4"><input id="email" type="email" placeholder="E-mail" name="email"></div>
                     <div class="col-12 col-md-4"><input id="subjet" type="text" placeholder="Asunto" name="subjet"></div>
                     <div class="col-12"><textarea id="content" placeholder="Mensaje" rows="8"></textarea></div>
-                    <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="submit" value="Enviar Mensaje"></div>
+                    <div class="col-12 flex justify-content-center"><button class="btn gradient-bg" type="submit" value="Enviar Mensaje"></button></div>
                 </form>
             </div>
         </div>
@@ -150,8 +150,8 @@
 
                 <nav class="footer-navigation">
                     <ul class="flex flex-wrap justify-content-center align-items-center">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Eventos</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Eventos</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
